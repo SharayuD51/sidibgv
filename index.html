@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Form and Table</title>
+
+<style>
+body{font-family:Arial, sans-serif;}
+
+table{
+border-collapse:collapse;
+width:60%;
+margin-top:20px;
+background-color:black;
+color:gold;
+}
+
+table,th,td{
+border:1px solid gold;
+}
+th,td{
+padding:8px;
+text-align:left;
+}
+form{
+width:50%;
+}
+label{
+display:inline-block;
+width:80px;
+}
+</style>
+</head>
+
+<body>
+  <h2>Student form</h2>
+  <form>
+    <lable>Roll no:</lable>
+    <input type="text"name="Rollno"><br><br>
+     <lable>Name:</lable>
+    <input type="text"name="Name"><br><br>
+     <lable>Address</lable>
+    <textarea name="Address"></textarea><br><br>
+
+ <label for="idproof">Select ID Proof:</label>
+    <select id="idproof" name="idproof">
+        <option value="">--Select--</option>
+        <option value="aadhar">Aadhar Card</option>
+        <option value="pan">PAN Card</option>
+        <option value="passport">Passport</option>
+        <option value="voter">Voter ID</option>
+    </select>
+<br><br>
+<label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+
+    <br><br>
+<label>Select Your Interests:</label><br><br>
+
+    <input type="checkbox" id="sports" name="interest" value="sports">
+    <label for="sports">Sports</label><br>
+
+    <input type="checkbox" id="music" name="interest" value="music">
+    <label for="music">Music</label><br>
+
+    <input type="checkbox" id="travel" name="interest" value="travel">
+    <label for="travel">Travel</label><br>
+
+    <input type="checkbox" id="reading" name="interest" value="reading">
+    <label for="reading">Reading</label><br>
+
+    <input type="submit" value="Submit"></form>
+
+
+  <table>
+    <tr>
+      <th colspan="3">Student Details</th>
+    </tr>
+    <tr>
+      <th>Roll No</th>  
+       <th>Name</th>  
+       <th>Address</th>  
+    </tr>
+    <tr>
+      <td>9</td>  
+       <td>Sharayu</td>  
+       <td>America</td>  
+    </tr>
+     <tr>
+      <td>25</td>  
+       <td>Shrushti</td>  
+       <td>Spain</td>  
+    </tr>
+     <tr>
+      <td>28</td>  
+       <td>Ajeshwaree</td>  
+       <td>South korea</td>  
+    </tr>
+  </table>
+
+ 
+    <br><br>
+</body>
+</html>
+    
+   
